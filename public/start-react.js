@@ -36,7 +36,7 @@ const useYarn = fs.existsSync(paths.yarnLockFile);
 const isInteractive = process.stdout.isTTY;
 
 // Warn and crash if required files are missing
-function startReact() {
+ async function startReact() {
   if (!checkRequiredFiles([paths.appHtml, paths.appIndexJs])) {
     process.exit(1);
   }
@@ -121,6 +121,8 @@ function startReact() {
       }
       process.exit(1);
     });
+
+    return true;
 }
 
  module.exports = startReact;
