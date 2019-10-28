@@ -1,3 +1,5 @@
+![Travis (.org)](https://img.shields.io/travis/marik22312/ibex-broadcaster?label=Master%20Build&style=flat-square)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
