@@ -1,8 +1,8 @@
 language: node_js
 node_js:
-   - 12
+  - '10'
 dist: trusty
-cache: yarn
-
-install: yarn isntall
+install: true
+cache:
+  yarn: true
 script: yarn test
